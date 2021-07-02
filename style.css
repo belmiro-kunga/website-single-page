@@ -14,7 +14,11 @@ img{
 /*============== Variaveis ============== */
 /*0 a fazer*/
 :root{
+    
+    --header-height: 4.5rem;
+     /*== Color==*/
     --hue: 159;
+    /*== HSL Color Mode==*/
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);
     --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -76,13 +80,15 @@ h1{
     left: 0;
     z-index: 100;
     background-color: var(--body-color);
+    width: 100%;
 }
 /*4 a fazer*/
 nav{
-    height: 4.5rem;
+    height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 /*8 a fazer*/
 .logo{
@@ -99,10 +105,13 @@ nav{
     color: #187715;
 }
 
+main{
+    margin-top: var(--header-height);
+}
+
 /*============== Home ============== */
 /*3 a fazer*/
 .container{
-    width: 100%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
