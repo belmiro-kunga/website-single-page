@@ -80,8 +80,9 @@ h1{
     left: 0;
     z-index: 100;
     background-color: var(--body-color);
-    width: 100%;
+    width: 100%  ;
 }
+/*========navigation=========*/
 /*4 a fazer*/
 nav{
     height: var(--header-height);
@@ -90,6 +91,7 @@ nav{
     justify-content: space-between;
     width: 100%;
 }
+/*========Logo=========*/
 /*8 a fazer*/
 .logo{
     text-transform: uppercase;
@@ -106,7 +108,7 @@ nav{
 }
 
 main{
-    margin-top: var(--header-height);
+    margin-top: calc(var(--header-height) + 2rem);
 }
 
 /*============== Home ============== */
