@@ -1,0 +1,38 @@
+/*RESET*/
+/*1 a fazer*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*6 a fazer*/
+body{
+    font: 400 1rem 'DM Sans', sans-serif;
+}
+/*7 a fazer*/
+h1{
+    font: 700 1.875rem 'Poppins' sans-serif;
+}
+/*5 a fazer*/
+img{
+    width: 100%;
+    height: auto;
+}
+/*2 a fazer*/
+#header{
+    height: 4.5rem;
+}
+/*4 a fazer*/
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+
+}
+/*3 a fazer*/
+.container{
+    width: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
