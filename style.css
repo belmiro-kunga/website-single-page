@@ -1,38 +1,162 @@
-/*RESET*/
+/*============== Reset ============== */
 /*1 a fazer*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*6 a fazer*/
-body{
-    font: 600 1rem 'DM Sans', sans-serif;
-}
-/*7 a fazer*/
-h1{
-    font: 700 1.875rem 'Poppins' sans-serif;
-}
 /*5 a fazer*/
 img{
     width: 100%;
     height: auto;
 }
+
+/*============== Variaveis ============== */
+/*0 a fazer*/
+:root{
+    --hue: 159;
+    --base-color: hsl(var(--hue) 36% 57%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+}
+
+
+/*============== Base ============== */
+/*6 a fazer*/
+body{
+    font: 400 1rem 'DM Sans', sans-serif;
+    color: var(--text-color);
+    background: var(--body-color);
+    -webkit-font-smoothing: antialiased;
+}
+/*7 a fazer*/
+h1{
+    font: 700 1.875rem 'Poppins' sans-serif;
+    color: var(--title-color);
+    -webkit-font-smoothing: auto;
+}
+.button{
+    background-color: var(--base-color) ;
+    color: var(--text-color-light);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    font: 500 1rem "DM Sans" sans-serif;
+}
+.button:hover{
+    background-color: var(--base-color-alt);
+    transition: background 0.3s;
+}
+.divider-1{
+    height: 1px;
+    background: linear-gradient(
+        270deg,
+      hsla(var(--hue), 36%, 57%, 1) 0%,
+      hsla(var(--hue), 65%, 88%, 0.3) 100%
+
+    );
+}
+
+/*============== Layout ============== */
 /*2 a fazer*/
 #header{
-    height: 4.5rem;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 2rem;
+    display: flex;
+   
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--body-color);
 }
 /*4 a fazer*/
 nav{
+    height: 4.5rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
+/*8 a fazer*/
 .logo{
-
+    text-transform: uppercase;
+    font: 700 1.31rem 'Poppins', sans-serif;
+    color: var(--title-color);
 }
+/*10 a fazer*/
+.span-2{
+    color: var(--base-color);
+}
+/*11 a fazer*/
+.span-1{
+    color: #187715;
+}
+
+/*============== Home ============== */
 /*3 a fazer*/
 .container{
     width: 100%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+.grid{
+    display: grid;
+    gap: 2rem;
+}
+
+.section{
+    padding: 5rem 0;
+}
+/*12 a fazer*/
+#home{
+    overflow: hidden;
+}
+#home .img{
+    position: relative;
+}
+#home .container{
+    margin: 0;
+}
+#home .img{
+    position: relative;
+}
+#home .img::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
+}
+#home .img img{
+    position: relative;
+    right: 2.93rem;
+}
+#home .img img,
+#home .img::before{
+    border-radius: 0.25rem;
+}
+
+#home .text{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+}
+
+#home .text h1{
+    margin-bottom: 1rem;
+}
+
+#home .text p{
+    margin-bottom: 2rem;
+    max-width: 100%;
 }
